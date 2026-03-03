@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/btn_gradient.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- pressed state -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#FF4081"
+                android:endColor="#E91E63"
+                android:angle="0" />
+            <corners android:radius="50dp"/>
+        </shape>
+    </item>
+
+    <!-- default state -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#FF70E1"
+                android:endColor="#FF4081"
+                android:angle="0" />
+            <corners android:radius="50dp"/>
+        </shape>
+    </item>
+
+</selector>

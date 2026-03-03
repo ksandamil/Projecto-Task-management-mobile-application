@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- gradient fill -->
+    <gradient
+        android:startColor="#6EC6A9"
+        android:endColor="#497572"
+        android:angle="0" /> <!-- 0 = left→right, use 90 for top→bottom -->
+
+    <!-- rounded corners -->
+    <corners android:radius="20dp" />
+
+</shape>

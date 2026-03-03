@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9CDCD"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/topCard"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#2D3A8C"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="415dp"
+            android:layout_height="202dp"
+            android:background="@color/navyblue"
+            android:padding="20dp">
+
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="231dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toEndOf="@+id/tvGreeting"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/button_onoff_indicator_off" />
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="231dp"
+                app:layout_constraintStart_toEndOf="@+id/tvGreeting"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/button_onoff_indicator_off" />
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="125dp"
+                android:layout_height="67dp"
+                android:layout_marginStart="-10dp"
+                android:layout_marginTop="-10dp"
+                android:contentDescription="App Logo"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo" />
+
+
+            <TextView
+                android:id="@+id/tvMyProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/pink"
+                android:text="My Profile"
+                android:textColor="@color/pink"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+
+            <TextView
+                android:id="@+id/tvGreeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Hi Kush"
+                android:textColor="@color/green"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvMyProfile" />
+
+
+            <ImageView
+                android:id="@+id/ivProfileHeader"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="Profile Image"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/pr" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profileCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topCard">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:layout_marginEnd="24dp"
+                android:text="Kush Sandamila"
+                android:textColor="#212121"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:drawableStart="@android:drawable/ic_dialog_email"
+                android:drawablePadding="8dp"
+                android:drawableTint="#3F51B5"
+                android:text="Kush@gmail.com"
+                android:textColor="#757575"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="113dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="2dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/profile" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="36dp"
+                android:backgroundTint="#D534FD"
+                android:text="@string/Edit_Profile"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/statsCard"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="#649994"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileCard">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="367dp"
+            android:layout_height="126dp"
+            android:padding="20dp">
+
+
+
+            <ImageView
+                android:id="@+id/ivAchievement3"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginEnd="76dp"
+                android:layout_marginBottom="40dp"
+                android:contentDescription="Achievement"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@android:drawable/btn_star_big_on"
+                app:tint="#FFC107" />
+
+            <TextView
+                android:id="@+id/tvTasksCompleted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Streak Task Tracker"
+                android:textColor="@android:color/white"
+
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTaskCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="12"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTasksCompleted" />
+
+
+            <TextView
+                android:id="@+id/tvSuccessRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Progress Rate: 95%"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <ImageView
+                android:id="@+id/ivAchievement"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="40dp"
+                android:contentDescription="Achievement"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@android:drawable/btn_star_big_on"
+                app:tint="#FFC107" />
+
+            <ImageView
+                android:id="@+id/ivAchievement2"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginEnd="52dp"
+                android:layout_marginBottom="40dp"
+                android:contentDescription="Achievement"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@android:drawable/btn_star_big_on"
+                app:tint="#FFC107" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="107dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="-30dp"
+                android:layout_marginTop="-45dp"
+                app:layout_constraintStart_toEndOf="@+id/tvTaskCount"
+                app:layout_constraintTop_toBottomOf="@+id/tvTaskCount"
+                app:srcCompat="@drawable/fire" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/actionsCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-45dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statsCard">
+
+        <LinearLayout
+            android:layout_width="368dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Quick Actions"
+                android:textColor="#212121"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSettings"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:text="Settings"
+                    android:textColor="#D534FD"
+                    android:textSize="12sp"
+                    app:cornerRadius="12dp"
+                    app:icon="@android:drawable/ic_menu_preferences"
+                    app:iconGravity="textStart"
+                    app:iconSize="16dp"
+                    app:iconTint="#D534FD"
+                    app:strokeColor="#D534FD"
+                    app:strokeWidth="2dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnHelp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/Help"
+                    android:textColor="#D534FD"
+                    android:textSize="12sp"
+                    app:cornerRadius="12dp"
+                    app:icon="@android:drawable/ic_menu_help"
+                    app:iconGravity="textStart"
+                    app:iconSize="16dp"
+                    app:iconTint="#D534FD"
+                    app:strokeColor="#D534FD"
+                    app:strokeWidth="2dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="403dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="-10dp"
+        android:background="@drawable/nav_bar"
+        android:elevation="8dp"
+        app:itemIconTint="@color/teal"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

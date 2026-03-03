@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/green"
+    tools:context=".login">
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bgl"
+        tools:layout_editor_absoluteY="354dp" />
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="646dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/rectangle_shape"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:text="My Rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="143dp"
+            android:layout_height="245dp"
+            app:srcCompat="@drawable/logo1" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:autoText="false"
+            android:text="Sign up"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#FFFDFD"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextText4"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text=" Enter your Name"
+            android:textColor="#FFFCFC"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text=" Enter your Email"
+            android:textColor="#FBFAFA"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text=" Enter Your Password"
+            android:textColor="#FDFBFB"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextText5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text=" Confirm Password"
+            android:textColor="#FDFCFC"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#BC52CE"
+            android:insetLeft="150dp"
+            android:text="Sign up" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/navyblue"
+            android:text="Already have an account? Sign in"
+            android:textColor="#9D8787" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
